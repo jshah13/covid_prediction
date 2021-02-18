@@ -1,5 +1,7 @@
 # Covid-19 Prediction
 
+## Background
+
 ## Objective
 To predict the spread of the Covid-19 pandemic.
 
@@ -47,16 +49,22 @@ In JHU-style dataset, we know the number of cases who were confirmed with COVID-
 
 As you can see below, the prediction for the UK is a little odd since it sppears there are no individuals that recover from Covid-19. This is because the UK did not release recovry figures and so the model assumes no one recovers.
 
-Secondly, for India, the infection figures seem too high since this 
+Secondly, for India, the infection figures seem too high since this model predicts nearly 200m people will be infected by COVID. This has occurred due to the large population in India. It can also be seen that the number of deaths is quite low compared to the number of infections which is due to the population demographics, with India being a relatively young nation. Considering the timeline of the prediction, this model predicts that India will be over the worst of the pandemic in early 2021, however, in reality the number of new cases peaked in Q4 2020, which is earlier than predicted.
 
 **Prediction**
 
 UK:
+
 ![image](https://user-images.githubusercontent.com/45533954/108425702-b9702d80-7232-11eb-8c5f-f086bf0e1aa1.png)
 
 India:
-![image](https://user-images.githubusercontent.com/45533954/108425587-904f9d00-7232-11eb-9eed-a21bfbeabf89.png)
+Prediction:
 
+![image](https://user-images.githubusercontent.com/45533954/108427119-98104100-7234-11eb-829e-a0762010c473.png)
+
+Actual:
+
+![image](https://user-images.githubusercontent.com/45533954/108427353-ef161600-7234-11eb-80f3-a04973808a2a.png)
 
 ## Next Steps
-As mentioned above, this model is overly simplistic as it uses the relative rankings of the teams to predict the winner and so in order to progress this model, it would be best to include some other features related to each team's strengths and weaknesses such as the average age, international caps, or some other player specific features such as football manager ratings to establish the quality of the players. Alternatively, we could perform some sentiment analysis based on recent newspaper articles to determine how the world media sees each team's chances (no one predicted Germany to go out that early though!).
+As mentioned above, this model is not very accurate nor precise at predicting the spread of the pandemic in the countries tested. However, due to the fluidity of the situation within countries with regards to responses and effectiveness of these as well as global travel links, it would be difficult to model and predict the spread of the disease. Therefore, my next project will be to 'nowcast' more local outbreaks based on Google search and Google mobility report data. 
