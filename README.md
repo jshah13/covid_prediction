@@ -1,6 +1,17 @@
 # Covid-19 Prediction
 
 ## Background
+On 31 December 2019, the World Health Organization (WHO) was informed of a cluster of cases of pneumonia of unknown cause detected in Wuhan, Hubei Province, China. A novel coronavirus (SARS coronavirus-2 (SARS-CoV-2)) was subsequently identified from patient samples.
+
+Coronaviruses, named for the crown-like spikes on their surfaces, are a large family of viruses that are common in people and many different species of animals, including camels, cattle, cats, and bats. There are many types of human coronaviruses, including some that commonly cause mild upper-respiratory tract illnesses. COVID-19 is a new disease, caused by a novel (or new) coronavirus that has not previously been seen in humans.
+
+![image](https://user-images.githubusercontent.com/45533954/108430269-048d3f00-7239-11eb-8a0d-d6142d65d1ea.png)
+
+As of 06 July 2020 (date of this analysis), the pandemic had spread all over the globe, with nearly 12m cases as shown below:
+
+![image](https://user-images.githubusercontent.com/45533954/108430402-36060a80-7239-11eb-9ffe-1e39d736cf44.png)
+
+![image](https://user-images.githubusercontent.com/45533954/108430646-94cb8400-7239-11eb-9779-7e730d41cd78.png)
 
 ## Objective
 To predict the spread of the Covid-19 pandemic.
@@ -46,6 +57,8 @@ S∗ describes the cases who are actually carriers of the disease without anyone
 In JHU-style dataset, we know the number of cases who were confirmed with COVID-19, but we do not know the number of died cases who died without COVID-19. Essentially S∗ serves as an auxiliary compartment in SIR-F model to separate the two death situations and insert a probability factor of {α, 1 − α}.
 
 ## Results
+
+**Note:** This analysis was performed on 06 July 2020, so figures may be outdated when this is being read.
 
 As you can see below, the prediction for the UK is a little odd since it sppears there are no individuals that recover from Covid-19. This is because the UK did not release recovry figures and so the model assumes no one recovers.
 
